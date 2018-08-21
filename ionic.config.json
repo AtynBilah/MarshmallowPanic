@@ -1,0 +1,7 @@
+{
+  "name": "MP",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
