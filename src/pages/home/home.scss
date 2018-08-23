@@ -1,4 +1,17 @@
 page-home {
+    //---------------------------------------- General Stuff ------------------------------
+    
+    .grid-dog{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        
+        ion-col{
+            padding: 0;
+        }
+    }
+
+    //---------------------------------------- DOG PART ------------------------------
     * {
         margin: 0;
         padding: 0;
@@ -19,9 +32,9 @@ page-home {
     .dog {
         width: 160px;
         height: 186px;
-        // position: relative;
-        position: fixed;
-        right: -7px;
+        position: relative;
+        // position: fixed;
+        right: -80px;
         bottom: 0;
     }
     @keyframes head {
@@ -217,7 +230,7 @@ page-home {
       border-radius: 100px 100px 0 0;
     }
     .dog-foot {
-        width: 20px;
+      width: 20px;
       height: 13px;
       position: absolute;
       z-index: 5;
@@ -255,4 +268,46 @@ page-home {
         border-radius: 50%;
         background-color: rgb(52, 240, 224);
     }
+
+    // --------------------------------- SPEECH BUBBLE PART -----------------------------------
+
+    /* Google Font Bree Serif */
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif');
+
+html {
+    font-family: 'Bree Serif', serif;
+    background-color: #ecf0f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.speechbubble {
+  background-color: #e74c3c;
+  color: #fff;
+  font-size: 12pt;
+  padding: 1rem 1.4rem;
+  position: relative;
+  display: inline-block;
+  border-radius: 0.2em;
+}
+
+/* Triangle at the bottom */
+.speechbubble:after {
+  content: '';
+  position: absolute;
+  bottom: -15.6px;
+  right: 20px;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 16px solid #c0392b;
+}
+
+.wrapper-center {
+  display: flex;
+  justify-content: center;
+}
+
+// ---------------------------------------------------------------------------------------------
 }
